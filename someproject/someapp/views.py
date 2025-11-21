@@ -13,10 +13,8 @@ def get_items(request):
         )
     )
 
-    # total_books = sum(item['sum_book'] for item in result)
 
     return render(request, 'main.html', {
         'publishers': result,
-        # 'total_books': total_books  
 
     })
